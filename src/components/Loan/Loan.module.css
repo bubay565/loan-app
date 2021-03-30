@@ -1,0 +1,12 @@
+.wrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  background: #f3ecec;
+}
+
+.child {
+  display: flex;
+  flex-direction: row;
+}
