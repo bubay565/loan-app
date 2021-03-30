@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Loan from '../Loan/Loan'
+import Popup from '../Popup/Popup'
 import styles from './Overview.module.css'
 import currentLoans from '../../current-loans.json'
 
@@ -51,6 +52,13 @@ export default function Overview() {
         ))}
         <div className={styles.total}>Total amount available for investments: <strong>£{new Intl.NumberFormat().format(Number(totalAvailable))}</strong></div>
       </div>
+      { popupId &&
+        <Popup
+          onSubmitHandler={onInvestHandler}
+          onClose={closePopup}
+          loan={loanData.filter(loan => loan.id === popupId)}
+        />
+      }
     </>
   )
 }

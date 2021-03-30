@@ -1,0 +1,33 @@
+.inputWrapper {
+  /* width: 100%; */
+}
+
+.formInput {
+  letter-spacing: normal;
+  line-height: normal;
+  border: 1px solid;
+  font-size: 16px;
+  height: 2rem;
+}
+
+.inputError {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  font-size: 12px;
+  color: red;
+  display: inline;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.form div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
